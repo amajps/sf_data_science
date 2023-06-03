@@ -35,4 +35,4 @@ def score_game(random_predict) ->int:
     score = int(np.mean(count_ls))
     return score   
 if __name__ == "__main__":
-    print(score_game(random_predict))   
+    print(score_game(random_predict))     
