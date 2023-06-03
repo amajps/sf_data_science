@@ -26,5 +26,5 @@ def score_game(random_predict) ->int:
         count_ls.append(random_predict(nummer))
     score = int(np.mean(count_ls))
     return score   
-if __main__ == '__name__':
+if __name__ == "__main__":
     print(score_game(random_predict))   
