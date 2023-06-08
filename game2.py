@@ -29,10 +29,10 @@ def score_game(random_predict) ->int:
     """
     count_ls=[]
     np.random.seed(1)
-    random_array=  np.random.randint(0,100,size=(1800))
+    random_array=  np.random.randint(0,100,size=(1000))
     for nummer in random_array:
         count_ls.append(random_predict(nummer))
     score = int(np.mean(count_ls))
     return score   
 if __name__ == "__main__":
-    print(score_game(random_predict))     
+    print(score_game(random_predict))
